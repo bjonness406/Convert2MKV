@@ -4,10 +4,10 @@ MAINTAINER Bjonness406
 
 # install packages
 RUN \
- apk update && \
- apk add --no-cache \
- wget \
- unzip && \
+ apt-get update && apt-get install -y \
+  unzip \
+  wget \
+ && rm -rf /var/lib/apt/lists/*
  mkdir /config && \
  
  cd tmp && \
