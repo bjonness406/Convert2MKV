@@ -10,14 +10,19 @@ RUN \
  unzip
  
  RUN \
- cd tmp && \
+ cd tmp 
+ 
+ RUN \
  wget http://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master
  
  RUN \
- unzip /tmp/archive.zip?ref=master && /
- mv /tmp/convert2mkv-master-*/convert2mkv.sh /usr/bin && \
+ unzip /tmp/archive.zip?ref=master
+ 
+ RUN \
+ mv /tmp/convert2mkv-master-*/convert2mkv.sh /usr/bin
  
  # cleanup
+ RUN \
  rm -rf \
 	/tmp/* \
 	/var/tmp/*
