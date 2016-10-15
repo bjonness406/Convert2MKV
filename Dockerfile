@@ -19,7 +19,7 @@ RUN \
 	/tmp/* \
 	/var/tmp/*
   
-ENTRYPOINT ["/config/convert2mkv.sh"]
+ENTRYPOINT ["/config/rclone"]
 
 VOLUME ["/config"]
 
