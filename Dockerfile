@@ -14,10 +14,6 @@ RUN \
  cd /config && \
  wget -q https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master && \
  unzip /config/archive.zip?ref=master && \
- 
-# cleanup
- rm -rf \
-	/config/*.zip 
   
 ENTRYPOINT ["/config/convert2mkv.sh"]
 
