@@ -9,6 +9,9 @@ RUN \
  wget \
  unzip && \
  
+ #Make config folder
+ mkdir /config &&\ 
+ 
  cd tmp && \
  wget -q https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master && \
  unzip /tmp/archive.zip?ref=master && \
