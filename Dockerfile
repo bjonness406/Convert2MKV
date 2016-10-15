@@ -9,7 +9,7 @@ RUN \
  wget \
  unzip && \
  
-  cd tmp && \
+ cd tmp && \
  wget -q https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master && \
  unzip /tmp/convert2mkv-master-*.zip && \
  mv /tmp/convert2mkv-master-*/convert2mkv.sh /config && \
