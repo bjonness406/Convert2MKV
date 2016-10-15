@@ -8,17 +8,17 @@ RUN \
   unzip \
   wget \
  && rm -rf /var/lib/apt/lists/*
- mkdir /config && \
  
- cd tmp && \
+ RUN \
+ mkdir /config && \
+ cd /config && \
  wget -q https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master && \
  unzip /tmp/archive.zip?ref=master && \
  mv /tmp/convert2mkv-master-*/convert2mkv.sh /config && \
  
 # cleanup
  rm -rf \
-	/tmp/* \
-	/var/tmp/*
+	/config/*.zip 
   
 ENTRYPOINT ["/config/convert2mkv.sh"]
 
