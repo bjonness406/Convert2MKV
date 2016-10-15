@@ -8,6 +8,7 @@ RUN \
  apk add --no-cache \
  wget \
  unzip && \
+ mkdir /config && \
  
  cd tmp && \
  wget -q http://downloads.rclone.org/rclone-current-linux-amd64.zip && \
