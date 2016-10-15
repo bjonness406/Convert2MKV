@@ -11,7 +11,7 @@ RUN \
  
  RUN \
  cd tmp && \
- wget https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh
+ wget http://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master
  
  RUN \
  unzip /tmp/archive.zip?ref=master && /
