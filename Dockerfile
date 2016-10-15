@@ -9,13 +9,10 @@ RUN \
  wget \
  unzip && \
  
- #Make config folder
- mkdir -p /config &&\ 
- 
- cd /tmp && \
- wget -q https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master && \
- unzip /tmp/archive.zip?ref=master && \
- mv /tmp/convert2mkv-master-*/convert2mkv.sh /config/convert2mkv.sh && \
+ cd tmp && \
+ wget -q http://downloads.rclone.org/rclone-current-linux-amd64.zip && \
+ unzip /tmp/rclone-current-linux-amd64.zip && \
+ mv /tmp/rclone-*-linux-amd64/rclone /config && \
  
 # cleanup
  rm -rf \
