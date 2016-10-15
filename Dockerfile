@@ -13,7 +13,7 @@ RUN \
  mkdir /config && \
  cd /config && \
  wget -q https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master && \
- unzip /config/archive.zip?ref=master && \
+ unzip /config/archive.zip?ref=master
   
 ENTRYPOINT ["/config/convert2mkv.sh"]
 
