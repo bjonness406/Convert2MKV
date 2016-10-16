@@ -4,7 +4,7 @@ MAINTAINER Bjonness406
 
 # install packages
 RUN \
- apk update && apk add \
+ apt-get update && apt-get install -y \
  curl
  
 RUN \
