@@ -10,7 +10,7 @@ RUN \
  
  RUN \
  cd /tmp && \
- wget https://github.com/othrayte/docker-cc-amp/archive/master.zip
+ wget http://cubecoders.com/Downloads/ampinstmgr.zip
  
  #RUN \
  #unzip /tmp/archive.zip?ref=master
