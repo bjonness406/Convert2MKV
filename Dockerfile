@@ -1,11 +1,12 @@
-FROM justcontainers/base-alpine
+FROM ubuntu
 
 MAINTAINER Bjonness406
 
 # install packages
-RUN \
- apk update && apk add \
- curl
+RUN apt-get update && apt-get install -y \
+ curl \
+ libimage-exiftool-perl \
+ libav-tools
  
 RUN \
  mkdir /config 
