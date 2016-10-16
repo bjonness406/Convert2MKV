@@ -9,9 +9,9 @@ RUN \
  
  RUN \
  mkdir /config && \
- curl https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh > /config/convert2mkv.sh
+ curl https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh > /usr/bin/convert2mkv.sh
   
-ENTRYPOINT ["/config/convert2mkv.sh"]
+ENTRYPOINT ["/usr/bin/convert2mkv.sh"]
 
 VOLUME ["/config"]
 
