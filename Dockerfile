@@ -6,11 +6,12 @@ MAINTAINER Bjonness406
 RUN \
  apk update && apk add \
  wget \
- unzip
+ unzip \
+ curl
  
  RUN \
  cd /tmp && \
- wget http://cubecoders.com/Downloads/ampinstmgr.zip
+ curl https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master
  
  #RUN \
  #unzip /tmp/archive.zip?ref=master
