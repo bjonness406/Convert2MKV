@@ -1,4 +1,4 @@
-FROM justcontainers/base-alpine
+FROM debian
 
 MAINTAINER Bjonness406
 
