@@ -8,12 +8,13 @@ RUN \
  curl
  
  RUN \
- mkdir /config && \
- curl https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh > /usr/bin/convert2mkv.sh && \
- chmod +x /usr/bin/convert2mkv.sh
-  
-ENTRYPOINT ["/usr/bin/convert2mkv.sh"]
+ mkdir /config 
+ 
+ ADD start.sh /start.sh
+ RUN chmod +x /start.sh
+ #curl https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh > /usr/bin/convert2mkv.sh && \
+ #chmod +x /usr/bin/convert2mkv.sh
 
 VOLUME ["/config"]
-
-CMD ["--version"]
+  
+ENTRYPOINT ["/start.sh"]
