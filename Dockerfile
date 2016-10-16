@@ -7,14 +7,14 @@ RUN \
  apk update && apk add \
  curl
  
- RUN \
+RUN \
  mkdir /config 
  
- ADD start.sh /start.sh
- RUN chmod +x /start.sh
- #curl https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh > /usr/bin/convert2mkv.sh && \
- #chmod +x /usr/bin/convert2mkv.sh
+ADD start.sh /start.sh
+RUN chmod +x /start.sh
 
 VOLUME ["/config"]
-  
+
+WORKDIR /config
+
 ENTRYPOINT ["/start.sh"]
