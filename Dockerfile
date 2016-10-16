@@ -6,11 +6,13 @@ MAINTAINER Bjonness406
 RUN apt-get update && apt-get install -y \
  curl \
  libimage-exiftool-perl \
- libav-tools \
+ libav-tools
  
+#make config folder
 RUN \
  mkdir /config 
  
+#Add start script
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
 
