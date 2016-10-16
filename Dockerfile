@@ -11,7 +11,7 @@ RUN \
  
  RUN \
  cd /tmp && \
- wget https://gitlab.com/ThatGuy/convert2mkv/repository/archive.zip?ref=master
+ wget https://github.com/othrayte/docker-cc-amp/archive/master.zip
  
  #RUN \
  #unzip /tmp/archive.zip?ref=master
