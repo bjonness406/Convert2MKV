@@ -4,8 +4,7 @@ MAINTAINER Bjonness406
 
 # install packages
 RUN \
- apk update && \
- apk add --no-cache \
+ apk update && apk add \
  wget \
  unzip
  
