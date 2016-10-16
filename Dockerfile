@@ -1,10 +1,10 @@
-FROM debian
+FROM justcontainers/base-alpine
 
 MAINTAINER Bjonness406
 
 # install packages
 RUN \
- apt-get update && apt-get install -y \
+ apk update && apk add \
  curl
  
 RUN \
