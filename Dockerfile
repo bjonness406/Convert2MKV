@@ -1,19 +1,23 @@
-FROM justcontainers/base-alpine
+FROM ubuntu
 
 MAINTAINER Bjonness406
 
 # install packages
-RUN \
- apk update && apk add \
- curl
+RUN apt-get update && apt-get install -y \
+ curl \
+ libimage-exiftool-perl \
+ libav-tools
  
- RUN \
- mkdir /config && \
- curl https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh > /usr/bin/convert2mkv.sh && \
- chmod +x /usr/bin/convert2mkv.sh
-  
-ENTRYPOINT ["/usr/bin/convert2mkv.sh"]
+#make config folder
+RUN \
+ mkdir /config 
+ 
+#Add start script
+ADD start.sh /start.sh
+RUN chmod +x /start.sh
 
 VOLUME ["/config"]
 
-CMD ["--version"]
+WORKDIR /config
+
+ENTRYPOINT ["/start.sh"]
