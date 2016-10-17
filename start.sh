@@ -5,4 +5,5 @@
  
  sh /config/convert2mkv.sh
  
+ #Only for testing, when docker will not stop immediately after script.. 
  sleep 300
