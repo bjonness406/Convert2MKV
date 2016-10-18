@@ -11,6 +11,8 @@ else
  chmod +x /config/convert2mkv.sh
  
  fi
+ 
+ echo "[Info] Starting script"
  bash /config/convert2mkv.sh
  
 Echo "Stopping Container, script finished.."
