@@ -13,6 +13,7 @@ else
  echo "[Info] Downloading script..."
  curl https://gitlab.com/ThatGuy/convert2mkv/raw/master/convert2mkv.sh > /config/convert2mkv.sh && \
  chmod +x /config/convert2mkv.sh
+ chmod 777 /config/convert2mkv.sh
  
  fi
  
