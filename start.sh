@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "\n \n \n ------------------------Starting container ------------------------ \n \n \n"
+printf "\n \n \n ------------------------Starting container ------------------------ \n \n \n"
 
 if [[ ! -f "/config/convert2mkv.sh" ]]; then
  echo "[Info] Script already downloaded, skipping download. If you want to redownload the script, delete convert2mkv.sh in you appdata"
@@ -15,4 +15,4 @@ else
  echo "[Info] Starting script"
  bash /config/convert2mkv.sh
  
-Echo "Stopping Container, script finished.."
+echo "Stopping Container, script finished.."
