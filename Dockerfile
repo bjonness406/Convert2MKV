@@ -5,7 +5,6 @@ MAINTAINER Bjonness406
 # install packages
 RUN apt-get update && apt-get install -y \
  curl \
- libimage-exiftool-perl \
  libav-tools
  
 #make config folder
