@@ -6,5 +6,10 @@ You will need to place the videos you want to convert, in the appdata folder (/c
 
 Thanks to @ntrevena (at plex forum) for the script!
 
+Docker run command:
+
+`docker run -v /Path-to-config:/config bjonness406/convert2mk`
+
+Docker hub link: https://hub.docker.com/r/bjonness406/convert2mkv/
 
 Docker template for unraid: https://github.com/bjonness406/Docker-templates
